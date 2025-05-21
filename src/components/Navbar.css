@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    position: relative;
+    padding: 1em 2em;
+    width: 94%;
+    z-index: 1;
+    overflow: visible;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: ease-in-out .2s;
+}
+
+.nav-links .nav-items:hover{
+    color: rgb(0, 0, 0);
+    background-color: #33ae0a;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.nav-links img:hover{
+    background-color: transparent;
+}
+
+.nav-items.active{
+    color: rgb(0, 0, 0);
+
+}
+
+.nav_logo{
+    width: 80px;
+    padding-right: 20px;
+}
