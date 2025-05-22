@@ -1,60 +1,226 @@
-.homeimage1{    
-    width: 100vw;
-    height: auto;
-    max-width:fit-content;
-    display: block;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --color: #9176FF;
+  --bg-color: #f4f4f4;
 }
 
-.square,
-.rect{
-    width: 60%;
-    height: 100px;
-    background-color: #4caf50;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #eee;
+  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
 }
-
-
 
 .view {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 250px; 
+  gap: 250px;
   padding: 20px;
   justify-content: center;
 }
 
+.homeimage1 {
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 100px;
+}
 
-.block {
-  background-color: #4caf50;
-  border-radius: 8px;
-  color: white;
-  padding: 10px;
+.p1 {
+  width: 70%;
+  padding: 35px;
+  margin: 100px auto 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.7em;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .p1 {
+    width: 90%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .discover_block h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+.discover_block {
+  width: 100%;
+  padding: 25px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: rgb(0, 0, 0);
 }
 
+.discover_block h1 {
+    font-size: 85px;
+  color: #000;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.15),
+    2px 2px 4px rgba(0, 0, 0, 0.10);
 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 50px;
+}
 
-.p1{
+.product-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    overflow-x: auto;
+    justify-items: center; 
+}
+
+.product-card {
+  background-color: var(--color);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(145, 118, 255, 0.6);
+  display:block;
+  position: relative;
+  gap: 20px;
+  width: 400px;
+}
+
+.product-card:hover{
     
-    width: 60%;
-    padding: 35px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-top: 100px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    font-weight: 500;
-    font-style: oblique;
-    line-height: 1.5em;
-    border: 2px solid black;
-    border-radius: 20px;
 }
 
-@media(max-width:768px){
-    .p1{
-        width: 90%;
-        padding: 20px;
-        font-size: 1rem;
-    }
+.product-image {
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.product-name {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.product-desc {
+  flex-grow: 1;
+  margin: 0 20px 0 0;
+  text-align: right;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.product-btn {
+  background-color: white;
+  color: var(--color);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #d1c4fc;
+}
+
+@media (max-width: 1368px) {
+.discover_block h1{
+    font-size: 60px;
+}
+.product-cards{
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: unset;
+  }
+}
+  .product-card {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-info {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-desc {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .product-btn {
+    margin-top: 15px;
+  }
+
+@media (max-width: 768px) {
+.discover_block h1{
+    font-size: 60px;
+}
+.product-cards{
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    overflow-x: unset;
+  }
+}
+  .product-card {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-info {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-desc {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .product-btn {
+    margin-top: 15px;
+  }
