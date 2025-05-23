@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import RotatingText from '../Roatingtext';
 
 export const Home = () => {
   useEffect(() => {
@@ -14,11 +15,18 @@ export const Home = () => {
   return (
     <div className='view'>
       <div>
+        <div className="firstimage">
         <img
           className='homeimage1'
-          src="/imageset/simon-maisch-mTujepy0ers-unsplash.jpg"
+          src="/imageset/homepage.png"
           alt="Farm"
         />
+        <h1 className='hometext'>
+          ENCHANCING
+          LIVESTOCK {''}
+          <RotatingText texts={['HEALTH', 'WELLNESS', 'VITALITY',' PRODUCTIVITY']} />
+        </h1>
+        </div>
         <p
           className='p1'
           data-aos="fade-up"
@@ -40,7 +48,7 @@ export const Home = () => {
         data-aos="fade-up"
         data-aos-delay="500"
       >
-        <h1>Discover our products</h1>
+        <h1 className='discover-head'>Discover our products</h1>
       </div>
 
       <div className="product-cards" data-aos="fade-up" data-aos-delay="700">
@@ -128,7 +136,39 @@ export const Home = () => {
            </button>
            </div>
         </div>
+        </div>
+        <h1 className='partner-head'>
+            Our partners
+        </h1>
+        <div className='part-container' data-aos="fade-up" data-aos-delay="300">
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part1.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part2.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part3.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part4.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part5.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part6.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part7.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part8.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/part9.webp'/>
+          </div>
       </div>
-    </div>
+      </div>
   );
 };

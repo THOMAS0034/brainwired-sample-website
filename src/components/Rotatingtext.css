@@ -1,0 +1,10 @@
+.rotating-text-wrapper {
+    padding-left: 2px;
+}
+
+.rotating-text {
+  font-size: larger;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #31a51c; 
+}

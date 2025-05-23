@@ -1,18 +1,20 @@
 .navbar {
-  background-color: #a5cd98;
-  padding: 1em 2em;
+  background-color: #ffffff;
   position: relative;
-  border-radius: 100px;
+  border-radius: 15px;
   margin: 20px;
   z-index: 10;
+  margin: 20px auto;
+  width: 1500px;
 }
 
 .nav-container {
   display: flex;
+  height: 70px;
   padding: 25px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 .nav-links {
@@ -26,23 +28,23 @@
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: "Lexend", sans-serif;
   font-size: 20px;
   font-weight: 500;
   transition: ease-in-out 0.2s;
 }
 
 .nav-links .nav-items:hover {
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: #0E9445;    
   border-radius: 20px;
   padding: 15px;
 }
 
 .nav_logo {
   width: 80px;
-  padding-right: 20px;
+  margin-left: 10px;
 }
 
 .hamburger {

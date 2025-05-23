@@ -10,7 +10,6 @@ body {
   padding: 0;
   height: 100%;
   background: #eee;
-  font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
 }
@@ -24,23 +23,48 @@ body {
   justify-content: center;
 }
 
-.homeimage1 {
-  width: 100vw;
-  height: auto;
-  max-width: 100%;
-  display: block;
-  border-radius: 100px;
+.firstimage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
 }
+
+.homeimage1 {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hometext {
+  width: 30%;
+  margin-right: 150px;
+  text-shadow: 0px 2px rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: "Lexend", sans-serif;
+  text-decoration: solid;
+  color: #333;
+  text-align: left;
+  font-size: 700;
+}
+
 
 .p1 {
   width: 70%;
   padding: 35px;
   margin: 100px auto 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 25px;
   font-weight: 800;
   line-height: 1.7em;
   box-sizing: border-box;
+}
+
+.discover-head{
+    font-family: "Lexend", sans-serif;
+    font-weight: 800;
 }
 
 @media (max-width: 768px) {
@@ -77,19 +101,18 @@ body {
 .product-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    overflow-x: auto;
-    justify-items: center; 
+    gap: 50px;
+    justify-items: center;
 }
 
 .product-card {
-  background-color: var(--color);
+  background-color:#0E9445;
   color: white;
   font-weight: 600;
   font-size: 1.2rem;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(145, 118, 255, 0.6);
+  box-shadow: 0 6px 15px #b3b3b3;
   display:block;
   position: relative;
   gap: 20px;
@@ -224,3 +247,30 @@ body {
   .product-btn {
     margin-top: 15px;
   }
+
+
+.part-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 100px;
+    gap: 80px;
+    justify-items: center; 
+}
+
+.part-card{
+  display:block;
+  position: relative;
+  gap: 50px;
+  width: 200px;
+}
+
+.part-image{
+    width: 200px;
+}
+
+.partner-head{
+    margin: auto;
+    font-family: "Lexend", sans-serif;
+    font-size: 800;
+    font-weight: 800;
+}
