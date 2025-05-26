@@ -1,13 +1,14 @@
 .westock-img{
     padding-top: 100px;
+    margin: auto;   
 }
 .westock_tagimg{
     padding-bottom: 100px;
 }
 .westock-content{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    line-height: 1.7em;
+    line-height: 2em;
      font-family: "Lexend", sans-serif;
      font-weight: 800;
      font-size: 20px;
@@ -17,86 +18,20 @@
 
 .westock-features{
     padding-bottom: 300px;
+    font-family: 'Lexend';
+    font-weight: 700;
+    font-style: italic  ;
 }
 
-.wrapper{
-    padding: 10px 10%;
-}
-.box-area{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
-    margin-top: 50px;
-}
-.box {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 400px;
-    height: 500px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+.featurehead{
+    margin: 100px;
+    font-family: 'Lexend';
+    font-weight: 800;
 }
 
-.box img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s ease;
-}
-.overlay {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent,#000000 0%);
-    color: #ffffff;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.overlay h3 {
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-family: "Lexend", sans-serif;
-    font-size: 24px;
-    letter-spacing: 1px;
-}
-
-.overlay p {
-    font-family: "Lexend", sans-serif;
-    font-size: 14px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.overlay a {
-    font-family: "Lexend", sans-serif;
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-    background: #ffffff;
-    border-radius: 50px;
-    padding: 8px 20px;
-    transition: background 0.3s ease;
-}
-
-.overlay a:hover {
-    background: #ddd;
-}
-
-.box:hover img {
-    transform: scale(1.05);
-}
-
-.box:hover .overlay {
-    opacity: 1;
+.feature-content{
+    width: 80%;
+    line-height: 2em;
+    padding: 50px;
+    margin: auto;
 }

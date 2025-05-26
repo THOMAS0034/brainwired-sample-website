@@ -1,0 +1,70 @@
+.aboutus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.aboutus-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 180px;
+  margin-bottom: 200px;
+}
+
+.aboutus-text {
+  flex: 1;
+}
+
+.aboutus-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.aboutus-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.history{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.7em;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+.aboutus-image {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutus-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.aboutus-history {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.aboutus-history h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.aboutus-history p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #666;
+}

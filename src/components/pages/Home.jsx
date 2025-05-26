@@ -3,8 +3,10 @@ import './Home.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import RotatingText from '../Roatingtext';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
     setTimeout(() => {
@@ -61,7 +63,7 @@ export const Home = () => {
             reduces manual labor, and improves overall farm productivity. Its user-friendly dashboard provides insights into animal behavior, movement,
              and vital signs, allowing for proactive care and efficient decision-making in livestock farming.
            </p>
-           <button className='product-btn'>
+           <button className='product-btn' onClick={() => navigate('/Westock')}>
             Know more
            </button>
            </div>
