@@ -1,8 +1,18 @@
 import React from 'react'
 import './Career.css'
 import { color } from 'framer-motion'
+import { useEffect } from 'react'
+import 'aos/dist/aos.css';
+import AOS from 'aos'
+import './Westock.css'
 
 export const Career = () => {
+  useEffect(() => {
+          AOS.init({ duration: 1000 });
+          setTimeout(() => {
+            AOS.refresh();
+          }, 500);
+        }, []);
   return (
     <div>
       <h1 className='career-heading'>
@@ -18,40 +28,43 @@ export const Career = () => {
         Our core values
       </h1>
       <div className="core-container">
-      <section className="core-section">
-        <div className="core-text">
-          <h2>Lead with passion</h2>
-          <p>
-           We love what we do and we do what we love. We are driven, take ownership for our work, and hold each other responsible.
-          </p>
-        </div>
-        <div className="core-image">
-          <img src="./imageset/leader1.png" alt="Our Vision" />
-        </div>
-      </section>
-      <section className="core-section reverse">
-        <div className="core-image">
-          <img src="./imageset/rise.jpg"  alt="Technology" />
-        </div>
-        <div className="core-text">
-          <h2>Continue to grow</h2>
-          <p>
-            We keep learning, teaching, and growing individually, as a company and as a community.
-          </p>
-        </div>
-      </section>
-      <section className="core-section">
-        <div className="core-text">
-          <h2>Bring good vibes</h2>
-          <p>
-            We are positive, respectful team players. We build each other up, and are always ready to go the extra mile to help one another..
-          </p>
-        </div>
-        <div className="core-image">
-          <img src="./imageset/vibe.jpg"  alt="Our Team" />
-        </div>
-      </section>
+  <section className="core-section">
+    <div className="core-text" data-aos="fade-right">
+      <h2>Lead with passion</h2>
+      <p>
+        We love what we do and we do what we love. We are driven, take ownership for our work, and hold each other responsible.
+      </p>
     </div>
+    <div className="core-image" data-aos="fade-left">
+      <img src="./imageset/leader1.png" alt="Our Vision" />
+    </div>
+  </section>
+
+  <section className="core-section reverse">
+    <div className="core-image" data-aos="fade-right">
+      <img src="./imageset/rise.jpg" alt="Technology" />
+    </div>
+    <div className="core-text" data-aos="fade-left">
+      <h2>Continue to grow</h2>
+      <p>
+        We keep learning, teaching, and growing individually, as a company and as a community.
+      </p>
+    </div>
+  </section>
+
+  <section className="core-section">
+    <div className="core-text" data-aos="fade-right">
+      <h2>Bring good vibes</h2>
+      <p>
+        We are positive, respectful team players. We build each other up, and are always ready to go the extra mile to help one another.
+      </p>
+    </div>
+    <div className="core-image" data-aos="fade-left">
+      <img src="./imageset/vibe.jpg" alt="Our Team" />
+    </div>
+  </section>
+</div>
+
     <h1 style={{fontSize:'45px'}}>
       Come Work With Us!
     </h1>

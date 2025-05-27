@@ -22,17 +22,12 @@ function Navbar() {
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li>
             <NavLink to="/Westock" className="nav-items" onClick={() => setMenuOpen(false)}>
-              Westock
+              WeSTOCK
             </NavLink>
           </li>
           <li>
             <NavLink to="/Aboutus" className="nav-items" onClick={() => setMenuOpen(false)}>
               About us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Products" className="nav-items" onClick={() => setMenuOpen(false)}>
-              Products
             </NavLink>
           </li>
           <li>

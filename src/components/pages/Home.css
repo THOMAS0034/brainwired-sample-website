@@ -157,7 +157,7 @@ body {
 
 .product-btn {
   background-color: white;
-  color: var(--color);
+  color: black;
   border: none;
   border-radius: 20px;
   padding: 8px 15px;
@@ -169,7 +169,8 @@ body {
 }
 
 .product-btn:hover {
-  background-color: #d1c4fc;
+  background-color: #000000;
+  color: white;
 }
 
 @media (max-width: 1368px) {
@@ -273,4 +274,35 @@ body {
     font-family: "Lexend", sans-serif;
     font-size: 800;
     font-weight: 800;
+}
+
+.award-container{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 100px;
+    gap: 80px;
+    justify-items: center; 
+}
+
+@media (max-width: 768px) {
+  .award-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 100px;
+  gap: 150px;
+  justify-items: center; 
+}
+}
+
+@media (max-width: 768px) {
+  .part-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 100px;
+  gap: 150px;
+  justify-items: center; 
+}
+.hometext{
+  width: 20%;
+}
 }

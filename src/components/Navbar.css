@@ -74,7 +74,10 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
+  .navbar{
+    width: 500px;
+  }
   .nav-links {
     position: absolute;
     top: 70px; 

@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import RotatingText from '../Roatingtext';
 import { useNavigate } from 'react-router-dom';
 
+
 export const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -53,11 +54,12 @@ export const Home = () => {
         <h1 className='discover-head'>Discover our products</h1>
       </div>
 
-      <div className="product-cards" data-aos="fade-up" data-aos-delay="700">
+      <div className="product-cards" data-aos="zoom-in" data-aos-delay="700">
         <div className="product-card">
           <img className='product-image'  src='./imageset/westocktag.webp'/>
           <div className="product-info">
         <h1 className='product-info'>We stock</h1>
+        <h5>(cowboy)</h5>
         <p className='product-desc'>WeStock is an innovative livestock management platform designed to help farmers monitor the health and
            activity of their animals in real time. By using IoT-enabled devices and data analytics, WeStock enables early detection of health issues,
             reduces manual labor, and improves overall farm productivity. Its user-friendly dashboard provides insights into animal behavior, movement,
@@ -68,7 +70,7 @@ export const Home = () => {
            </button>
            </div>
         </div>
-        <div className="product-card">
+        <div className="product-card" style={{backgroundColor:'rgb(38, 137, 152)'}}>
           <img className='product-image'  src='./imageset/westocktag.webp'/>
           <div className="product-info">
         <h1 className='product-info'>Togo</h1>
@@ -82,7 +84,37 @@ export const Home = () => {
            </button>
            </div>
         </div>
-        <div className="product-card">
+        <div className="product-card" style={{backgroundColor:'rgba(212, 64, 27, 0.96)'}}>
+          <img className='product-image'  src='./imageset/westocktag.webp'/>
+          <div className="product-info">
+        <h1 className='product-info'>Westock</h1>
+        <h5>(Rancher)</h5>
+        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
+           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
+            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
+             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
+           </p>
+           <button className='product-btn'>
+            Know more
+           </button>
+           </div>
+        </div>
+        <div className="product-card" style={{backgroundColor:'rgb(106, 123, 255)'}}>
+          <img className='product-image'  src='./imageset/westocktag.webp'/>
+          <div className="product-info">
+        <h1 className='product-info'>Westock</h1>
+        <h5>(Dunes)</h5>
+        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
+           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
+            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
+             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
+           </p>
+           <button className='product-btn'>
+            Know more
+           </button>
+           </div>
+        </div>
+        <div className="product-card" style={{backgroundColor:'rgb(188, 101, 25)'}}>
           <img className='product-image'  src='./imageset/westocktag.webp'/>
           <div className="product-info">
         <h1 className='product-info'>Togo</h1>
@@ -96,35 +128,7 @@ export const Home = () => {
            </button>
            </div>
         </div>
-        <div className="product-card">
-          <img className='product-image'  src='./imageset/westocktag.webp'/>
-          <div className="product-info">
-        <h1 className='product-info'>Togo</h1>
-        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
-           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
-            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
-             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
-           </p>
-           <button className='product-btn'>
-            Know more
-           </button>
-           </div>
-        </div>
-        <div className="product-card">
-          <img className='product-image'  src='./imageset/westocktag.webp'/>
-          <div className="product-info">
-        <h1 className='product-info'>Togo</h1>
-        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
-           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
-            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
-             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
-           </p>
-           <button className='product-btn'>
-            Know more
-           </button>
-           </div>
-        </div>
-        <div className="product-card">
+        <div className="product-card" style={{backgroundColor:'rgb(145, 77, 152)'}}>
           <img className='product-image'  src='./imageset/westocktag.webp'/>
           <div className="product-info">
         <h1 className='product-info'>Togo</h1>
@@ -140,9 +144,47 @@ export const Home = () => {
         </div>
         </div>
         <h1 className='partner-head'>
+            Awards and Recognition
+        </h1>
+        <div className='award-container' data-aos="zoom-in" data-aos-delay="300">
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a1.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a2.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a3.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a4.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a5.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a6.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a7.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a8.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a9.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a10.webp'/>
+          </div>
+          <div className="part-card">
+              <img className='part-image'  src='./imageset/a11.webp'/>
+          </div>
+      </div>
+        <h1 className='partner-head'>
             Our partners
         </h1>
-        <div className='part-container' data-aos="fade-up" data-aos-delay="300">
+        <div className='part-container' data-aos="zoom-in" data-aos-delay="300">
           <div className="part-card">
               <img className='part-image'  src='./imageset/part1.webp'/>
           </div>
