@@ -1,0 +1,63 @@
+.core-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.core-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 180px;
+  margin-bottom: 200px;
+}
+
+.core-text {
+  flex: 1;
+}
+
+.core-text h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.core-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Lexend';
+  color: #000000;
+}
+
+.core-image {
+  flex: 1;
+  text-align: center;
+}
+
+.core-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.career-heading{
+    font-family: 'Lexend';
+    font-size: 55px;
+    padding-top: 100px;
+}
+
+.career-culture-content{
+    font-family: 'Lexend';
+    font-size: 25px;
+    width: 70%;
+    margin: auto;
+    padding: 100px;
+    line-height: 2em;
+}
+
+.career-core-values{
+    padding-top: 180px;
+}
+

@@ -52,7 +52,7 @@ export const Aboutus = () => {
         </div>
       </section>
       <section className="aboutus-history">
-        <h2 style={{padding:'100px'}}>Our History</h2>
+        <h2 style={{padding:'100px'}}>A Brief Brainwired History</h2>
       </section>
               <p className='history' data-aos='fade-in' data-aos-delay='100'>
           Brainwired is an agritech startup based out of Kochi, which has developed a livestock health monitoring, and tracking system named WeSTOCK, that uses an IoT ear tag and a unique ML algorithm to identify sick and pregnant livestock and alert farmers accordingly. Mr Sreeshankar S Nair and Mr Romeo P Jerard founded the company in February 2018.
