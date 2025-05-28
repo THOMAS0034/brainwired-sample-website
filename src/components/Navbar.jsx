@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/Home">
-          <img src="/imageset/logo.webp" className="nav_logo" alt="Logo"/>
+          <img src="/imageset/logo.webp" className="nav_logo" alt="Logo" />
         </Link>
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span></span>

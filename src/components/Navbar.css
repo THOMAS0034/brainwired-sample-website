@@ -3,18 +3,19 @@
   position: relative;
   border-radius: 15px;
   margin: 20px;
-  z-index: 10;
   margin: 20px auto;
-  width: 1500px;
 }
 
 .nav-container {
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   height: 70px;
-  padding: 25px;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  box-sizing: border-box;
 }
 
 .nav-links {
@@ -75,8 +76,11 @@
 }
 
 @media (max-width: 1368px) {
-  .navbar{
-    width: 600px;
+  .navbar {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
   .nav-links {
     position: absolute;
