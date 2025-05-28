@@ -56,8 +56,22 @@
     padding: 100px;
     line-height: 2em;
 }
+.career-culture-content{
+        width: 70%;
+        text-align: justify;
+    }
 
 .career-core-values{
     padding-top: 180px;
 }
 
+@media(max-width:898px){
+    .career-culture-content{
+        font-size: 15px;
+        width: 100%;
+        text-align: justify;
+    }
+    .core-text p{
+        font-size: 15px;
+    }
+}

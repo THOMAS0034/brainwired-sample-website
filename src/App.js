@@ -9,12 +9,14 @@ import { Team } from './components/pages/Team';
 import { Career } from './components/pages/Career';
 import { Home } from './components/pages/Home';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ScrollToTop from './components/Scroll';
 
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Home' element={<Home/>}/>

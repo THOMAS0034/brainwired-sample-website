@@ -56,7 +56,7 @@ export const Home = () => {
 
       <div className="product-cards" data-aos="zoom-in" data-aos-delay="700">
         <div className="product-card">
-          <img className='product-image'  src='./imageset/westocktag.webp'/>
+          <img className='product-image'  src='./imageset/cowboynew.png'/>
           <div className="product-info">
         <h1 className='product-info'>We stock</h1>
         <h5>(cowboy)</h5>

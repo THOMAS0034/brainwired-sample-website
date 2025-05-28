@@ -17,6 +17,10 @@
   flex: 1;
 }
 
+p{
+    text-align: justify;
+}
+
 .aboutus-text h2 {
   font-size: 42px;
   margin-bottom: 15px;
@@ -70,4 +74,17 @@
   font-size: 1.2rem;
   line-height: 1.7;
   color: #666;
+}
+
+@media (max-width: 1368px) {
+  .aboutus-history p {
+  width: 70%;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.7;
+  color: #666;
+  }
+p{
+    text-align: center;
+}
 }
