@@ -14,6 +14,9 @@ export const Aboutus = () => {
 
   return (
     <div className="aboutus-container">
+      <h1>
+          “Providing affordable and efficient livestock health monitoring and tracking system“ 
+        </h1>
       <section className="aboutus-section">
         <div className="aboutus-text">
           <h2>Our Vision</h2>

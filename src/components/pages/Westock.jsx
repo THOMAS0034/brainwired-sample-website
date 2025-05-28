@@ -29,9 +29,6 @@ livestock health monitoring system</h1>
                 illness, and environmental threats. Whether you're managing a small dairy or a large-scale cattle farm, WeStock brings smart farming to your fingertips.
             
               </p>
-              <div className="working">
-                
-              </div>
               <h1 className='westock-features' data-aos='zoom-in' data-aos-delay='300'>
                   FEATURES
               </h1>

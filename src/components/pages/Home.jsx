@@ -56,7 +56,7 @@ export const Home = () => {
 
       <div className="product-cards" data-aos="zoom-in" data-aos-delay="700">
         <div className="product-card">
-          <img className='product-image'  src='./imageset/cowboynew.png'/>
+          <img className='product-image'  src='./imageset/westocktag.webp'/>
           <div className="product-info">
         <h1 className='product-info'>We stock</h1>
         <h5>(cowboy)</h5>
@@ -89,13 +89,12 @@ export const Home = () => {
           <div className="product-info">
         <h1 className='product-info'>Westock</h1>
         <h5>(Rancher)</h5>
-        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
-           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
-            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
-             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
-           </p>
+        <p className='product-desc'>WeStock Rancher is an innovative horse management platform built to help ranchers and equestrian 
+          professionals monitor the health and activity of their horses in real time. By leveraging IoT-enabled devices and intelligent data analytics,
+           WeStock Rancher enables early detection of health concerns, reduces manual effort, and enhances overall ranch efficiency.
+             </p>
            <button className='product-btn'>
-            Know more
+            Coming soon
            </button>
            </div>
         </div>
@@ -104,13 +103,14 @@ export const Home = () => {
           <div className="product-info">
         <h1 className='product-info'>Westock</h1>
         <h5>(Dunes)</h5>
-        <p className='product-desc'>The Togo Pet Care Collar is a smart wearable device created to monitor the well-being of pets.
-           Equipped with sensors, it tracks parameters such as activity levels, temperature, and location, helping pet owners stay
-            informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
-             activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
+        <p className='product-desc'>WeStock Dunes is a smart livestock management solution tailored for goat farmers.
+           Using IoT-powered sensors and advanced data analytics, WeStock Dunes provides real-time monitoring of goat health,
+            activity, and environmental conditions. The platform helps detect early signs of illness or stress, reducing losses
+             and improving herd productivity. With its user-friendly interface, farmers can track feeding behavior, mobility, and
+              vital parameters—enabling timely interventions and smarter, data-driven decisions for sustainable goat farming.
            </p>
            <button className='product-btn'>
-            Know more
+            Coming soon
            </button>
            </div>
         </div>
@@ -124,7 +124,7 @@ export const Home = () => {
              activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
            </p>
            <button className='product-btn'>
-            Know more
+            Coming soon
            </button>
            </div>
         </div>
@@ -138,7 +138,7 @@ export const Home = () => {
              activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
            </p>
            <button className='product-btn'>
-            Know more
+            Coming soon
            </button>
            </div>
         </div>

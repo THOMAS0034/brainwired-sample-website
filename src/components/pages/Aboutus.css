@@ -76,11 +76,11 @@ p{
   color: #666;
 }
 
-@media (max-width: 1368px) {
-  .aboutus-history p {
-  width: 70%;
-  font-size: 1.2rem;
-  text-align: justify;
+@media (max-width: 1068px) {
+  .history {
+  width: 95%;
+  font-size: .9rem;
+  text-align: left;
   line-height: 1.7;
   color: #666;
   }
