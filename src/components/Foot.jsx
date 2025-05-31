@@ -54,6 +54,7 @@ export const Foot = () => {
             <p><Link to="/career" className="text-white">Career</Link></p>
             <p><Link to="/team" className="text-white">Team</Link></p>
             <p><Link to="/aboutus" className="text-white">About us</Link></p>
+            <p><Link to="/blog" className="text-white">Blog</Link></p>
           </div>
 
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

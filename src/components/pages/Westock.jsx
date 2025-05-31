@@ -81,9 +81,57 @@ From individual cattle biodata — including age, breed, health history, and rep
               </p>
               </div>
               </div>
+              <h1 style={{padding:'80px'}}>We'd love to hear from you</h1>
+              <h3 style={{padding:'105px'}}>Fill out the form and our team will reach out to you as soon as possible</h3>
               <div className="formsection">
-                
-              </div>
+        <div className="form-container">
+          <form action="/submit" method="POST">
+            <label htmlFor="email">Email:</label><br />
+            <input className="input-field" type="email" id="email" name="email" required /><br /><br />
+
+            <label htmlFor="firstName">First Name:</label><br />
+            <input className="input-field" type="text" id="firstName" name="firstName" required /><br /><br />
+
+            <label htmlFor="lastName">Last Name:</label><br />
+            <input className="input-field" type="text" id="lastName" name="lastName" required /><br /><br />
+
+            <label htmlFor="state">State/Region:</label><br />
+            <input className="input-field" type="text" id="state" name="state" required /><br /><br />
+
+            <label htmlFor="phone">Phone Number:</label><br />
+            <input className="input-field" type="tel" id="phone" name="phone" required /><br /><br />
+
+            <label htmlFor="numLivestock">Number of Livestock:</label><br />
+            <input className="input-field" type="number" id="numLivestock" name="numLivestock" required min="1" /><br /><br />
+
+            <label style={{paddingTop:'25px',paddingBottom:'25px'}} >Type of Livestock:</label><br />
+            <div className="checkbox-group">
+  <div className="checkbox-item">
+    <input className="input-field1" type="checkbox" id="cattle" name="livestockType" value="Cattle" />
+    <label htmlFor="cattle">Cattle</label>
+  </div>
+
+  <div className="checkbox-item">
+    <input className="input-field1" type="checkbox" id="buffalo" name="livestockType" value="Buffalo" />
+    <label htmlFor="buffalo">Buffalo</label>
+  </div>
+
+  <div className="checkbox-item">
+    <input className="input-field1" type="checkbox" id="goat" name="livestockType" value="Goat" />
+    <label htmlFor="goat">Goat</label>
+  </div>
+
+  <div className="checkbox-item">
+    <input className="input-field1" type="checkbox" id="sheep" name="livestockType" value="Sheep" />
+    <label htmlFor="sheep">Sheep</label>
+  </div>
+</div>
+
+
+            <button className='submit-btn' type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
           </div>
       </div>
     )
