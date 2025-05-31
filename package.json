@@ -2,6 +2,7 @@
   "name": "brainwired",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thomas0034.github.io/brainwired-sample-website",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@testing-library/dom": "^10.4.0",
@@ -16,7 +17,6 @@
     "react-router-dom": "^7.6.0",
     "react-scripts": "5.0.1",
     "swiper": "^11.2.7",
-    "homepage": "https://thomas0034.github.io/THOMAS0034",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
