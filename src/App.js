@@ -8,6 +8,7 @@ import { Aboutus } from './components/pages/Aboutus';
 import { Team } from './components/pages/Team';
 import { Career } from './components/pages/Career';
 import { Home } from './components/pages/Home';
+import { Blog } from './components/pages/Blog';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ScrollToTop from './components/Scroll';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/Aboutus' element={<Aboutus/>}/>
         <Route path='/Team' element={<Team/>}/>
         <Route path='/Career' element={<Career/>}/>
+        <Route path='/Blog' element={<Blog/>}/>
       </Routes>
       <Foot/> 
     </div>

@@ -20,7 +20,7 @@ export const Westock = () => {
         <div className="westock-content">
             <img className='westock_tagimg' src='./imageset/cowboynew.png'/>
             <h3 style={{color:'rgb(29, 157, 52)'}}>Brainwired presents</h3>
-            <h1 style={{width:'40%', margin:'auto',paddingBottom:'150px',paddingTop:'50px'}}>“ worlds most affordable “
+            <h1 className='worlds_most' style={{width:'40%', margin:'auto',paddingBottom:'150px',paddingTop:'50px'}}>“ worlds most affordable “
 livestock health monitoring system</h1>
             <p className='westock-content' data-aos='zoom-in' data-aos-delay='200'>
                 WeStock is an advanced IoT-based health and environment monitoring system specifically designed for dairy and beef cattle.

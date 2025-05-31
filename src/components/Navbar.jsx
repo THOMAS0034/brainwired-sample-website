@@ -40,6 +40,11 @@ function Navbar() {
               Career
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/Blog" className="nav-items" onClick={() => setMenuOpen(false)}>
+              Blog
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

@@ -99,12 +99,13 @@
 
   .nav-links.open {
     opacity: 1;
+    background-color: #d8d8d8;
     pointer-events: auto;
     transform: translateY(0);
   }
 
   .nav-links li {
-    margin: 15px 0;
+    margin: 5px 0;
   }
 
   .hamburger {

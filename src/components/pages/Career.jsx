@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import './Career.css'
 import { color } from 'framer-motion'
 import { useEffect } from 'react'
