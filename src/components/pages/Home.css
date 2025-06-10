@@ -352,8 +352,11 @@ body {
 .p1 {
     width: 90%;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+.discover_block h1{
+    font-size: 3rem;
+}
 }
 
 @media (max-width: 968px) {
