@@ -3,6 +3,7 @@ import './Aboutus.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export const Aboutus = () => {
   useEffect(() => {
@@ -13,6 +14,13 @@ export const Aboutus = () => {
         }, []);
 
   return (
+    <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 1 }}
+    >
     <div className="aboutus-container">
       <h1>
           “Providing affordable and efficient livestock health monitoring and tracking system“ 
@@ -64,5 +72,6 @@ Our team has a passion for making things with real value. This has led us to ass
         </p>
 
     </div>
+    </motion.div>
   );
 };

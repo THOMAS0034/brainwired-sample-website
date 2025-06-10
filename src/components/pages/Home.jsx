@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import RotatingText from '../Roatingtext';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 export const Home = () => {
@@ -16,6 +17,13 @@ export const Home = () => {
   }, []);
 
   return (
+    <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 1 }}
+    >
     <div className='view'>
       <div>
         <div className="firstimage">
@@ -214,5 +222,6 @@ export const Home = () => {
           </div>
       </div>
       </div>
+      </motion.div>
   );
 };

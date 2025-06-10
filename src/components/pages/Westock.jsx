@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import './Westock.css'
 import { color } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export const Westock = () => {
     useEffect(() => {
@@ -13,6 +14,13 @@ export const Westock = () => {
         }, 500);
       }, []);
   return (
+    <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration:  1 }}
+    >
     <div className='westock-view'>
         <div className="westock-img">
             <img  className='westock-logoimg'src='./imageset/westock_logo.webp'/> 
@@ -134,5 +142,6 @@ From individual cattle biodata — including age, breed, health history, and rep
       </div>
           </div>
       </div>
+      </motion.div>
     )
 }

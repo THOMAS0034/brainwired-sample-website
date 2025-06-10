@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import './Westock.css'
+import { motion } from 'framer-motion';
 
 export const Career = () => {
   useEffect(() => {
@@ -14,6 +15,13 @@ export const Career = () => {
           }, 500);
         }, []);
   return (
+     <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 1 }}
+    >
     <div>
       <h1 className='career-heading'>
         Join the Team!
@@ -72,5 +80,6 @@ export const Career = () => {
       careers@brainwired.in
     </h5>
     </div>
+    </motion.div>
   )
 }

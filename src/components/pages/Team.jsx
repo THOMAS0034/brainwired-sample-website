@@ -1,8 +1,16 @@
   import React from 'react'
   import './Team.css'
+  import { motion } from 'framer-motion'
 
   export const Team = () => {
     return (
+      <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 1 }}
+    >
       <div>
         <h1 style={{padding:'50px'}}>Our Founders</h1>
         <div className="founder-cards">
@@ -124,5 +132,6 @@
         </div>
         </div>
         </div>
+        </motion.div>
     )
   }

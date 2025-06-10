@@ -1,8 +1,16 @@
 import React from 'react'
 import './Blog.css'
+import { motion } from 'framer-motion'
 
 export const Blog = () => {
   return (
+     <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 1 }}
+    >
     <div>
          <div className="blog-container">
       <h1 className="title">Our Blogs</h1>
@@ -106,5 +114,6 @@ export const Blog = () => {
       </div>
     </div>
     </div>
+    </motion.div>
   )
 }
