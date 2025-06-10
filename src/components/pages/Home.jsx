@@ -27,7 +27,7 @@ export const Home = () => {
         <h1 className='hometext'>
           ENCHANCING
           LIVESTOCK {''}
-          <RotatingText texts={['HEALTH', 'WELLNESS', 'VITALITY',' PRODUCTIVITY']} />
+          <RotatingText texts={['HEALTH', 'WELLNESS', 'VITALITY','YIELD']} />
         </h1>
         </div>
         <p

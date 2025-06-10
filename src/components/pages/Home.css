@@ -58,14 +58,14 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 300;
   line-height: 1.7em;
   box-sizing: border-box;
 }
 
 .discover-head{
     font-family: "Lexend", sans-serif;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -83,7 +83,7 @@ body {
 
 .discover_block {
   width: 100%;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -279,7 +279,7 @@ body {
     margin: auto;
     font-family: "Lexend", sans-serif;
     font-size: 800;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .award-container{
@@ -293,6 +293,17 @@ body {
   width: 250px;
 }
 
+@media (max-width: 1068px) {
+  .award-container,
+  .part-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 100px;
+  gap: 150px;
+  justify-items: center; 
+}
+}
+
 @media (max-width: 768px) {
   .award-container{
   display: grid;
@@ -301,6 +312,12 @@ body {
   gap: 150px;
   justify-items: center; 
 }
+}
+
+@media (max-width:768px){
+  h1.discover-head{
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -320,13 +337,32 @@ body {
   font-size: inherit;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1268px) {
   .hometext {
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 10px;
   }
 
   .hometext span {
-    font-size: 1.2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1068px) {
+.p1 {
+    width: 90%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .hometext {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .hometext span {
+    font-size: 1.5rem;
   }
 }
