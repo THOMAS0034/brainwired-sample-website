@@ -84,11 +84,14 @@
   }
   .nav-links {
     position: absolute;
-    top: 70px; 
+    top: 90px; 
     right: 20px;
     background-color: rgb(219, 219, 219);
-    flex-direction: column;
-    width: 200px;
+    flex-direction: row;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     opacity: 0;
@@ -97,19 +100,26 @@
     transition: all 0.3s ease-in-out;
   }
 
+  .nav-links a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
   .nav-links.open {
     opacity: 1;
-    background-color: #d8d8d8;
+    background-color: #c9c9c9;
     pointer-events: auto;
     transform: translateY(0);
   }
 
   .nav-links li {
     margin: 5px 0;
+    color: white;
   }
 
   .hamburger {
     display: flex;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 }

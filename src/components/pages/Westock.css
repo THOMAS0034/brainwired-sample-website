@@ -24,12 +24,12 @@ body {
 
 .westock-content p {
   text-align: justify;
+  padding-bottom: 100px;
 }
 
 .westock-features {
-  padding-bottom: 300px;
-  font-weight: 700;
-  font-style: italic;
+  padding-bottom: 100px;
+  font-weight: 400;
   font-family: "Lexend";
 }
 
@@ -247,6 +247,10 @@ body {
     padding-top: 30px;
     padding-bottom: 100px;
     line-height: 1.6em;
+  }
+
+  .westock_tagimg{
+    padding-bottom: 10px;
   }
 
   .feature-container {
