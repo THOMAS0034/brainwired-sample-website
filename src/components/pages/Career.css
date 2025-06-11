@@ -75,3 +75,39 @@
         font-size: 15px;
     }
 }
+
+@media (max-width:768px){
+  .career-culture-content{
+    width: 90%;
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 1rem;
+  }
+  .core-section{
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .core-section.reverse  {
+    flex-direction: column-reverse !important;
+  }
+
+  .core-text,
+  .core-image {
+    width: 100%;
+  }
+
+  .core-image img {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .core-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .core-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
