@@ -85,7 +85,7 @@
   .nav-links {
     position: absolute;
     top: 80px; 
-    right: 20px;
+    right: 0px;
     background-color: rgb(219, 219, 219);
     flex-direction: row;
     width: auto;

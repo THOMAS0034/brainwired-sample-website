@@ -27,3 +27,23 @@ p{
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  footer .row > div {
+    text-align: center !important;
+  }
+
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .row p, footer h6, footer hr {
+    text-align: center;
+  }
+
+  footer .img-fluid {
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+
