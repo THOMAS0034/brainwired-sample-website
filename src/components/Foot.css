@@ -21,6 +21,15 @@ p{
     padding-top: 11px;
 }
 
+.foot-link-head{
+
+}
+
+.foot-link{
+  text-decoration: none;
+  color: rgb(224, 224, 224);
+}
+
 .footer-logo-img {
   width: 80px;
   margin-left: 100px;
