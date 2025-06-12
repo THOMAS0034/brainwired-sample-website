@@ -102,7 +102,7 @@
   }
 
   .nav-links a {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -122,5 +122,11 @@
   .hamburger {
     display: flex;
     margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links a{
+    font-size: 10px;
   }
 }

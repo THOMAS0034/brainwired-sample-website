@@ -27,6 +27,10 @@ p{
   margin-bottom: 10px;
 }
 
+.social:hover{
+  color: rgb(230, 230, 230);
+}
+
 @media (max-width: 768px) {
   footer .row > div {
     text-align: center !important;

@@ -166,11 +166,11 @@ body {
   transition: 0.3s;
   width: 180px;
   align-self: center;
-  box-shadow: 0 10px 20px rgba(101, 95, 255, 0.2);
 }
 
 .submit-btn:hover {
-  background-color: #23b637;
+  background-color: #40b44f;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 900px) {

@@ -9,23 +9,21 @@ export const Foot = () => {
         <span>Get connected with us on social networks:</span>
       </div>
       <div>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-facebook-f"></i>
+        <a href="https://www.facebook.com/brainwired01/" className="text-white me-4">
+          <i className="social fab fa-facebook-f"></i>
         </a>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-twitter"></i>
+        <a href="https://x.com/Brainwired3" className="text-white me-4">
+          <i className="social fab fa-twitter"></i>
         </a>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-google"></i>
+
+        <a href="https://www.instagram.com/brain_wired/?hl=en" className="text-white me-4">
+          <i className="social fab fa-instagram"></i>
         </a>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-instagram"></i>
+        <a href="https://www.linkedin.com/company/brain-wired/posts/?feedView=all" className="text-white me-4">
+          <i className="social fab fa-linkedin"></i>
         </a>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="" className="text-white me-4">
-          <i className="fab fa-github"></i>
+        <a href="https://www.youtube.com/channel/UChbpQq0Vq4h0d9zzBcFJHFQ" className="text-white me-4">
+          <i className="social fab fa-youtube"></i>
         </a>
       </div>
     </section>
