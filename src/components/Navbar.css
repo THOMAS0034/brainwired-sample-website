@@ -139,11 +139,12 @@
     left: 10px;
   }
   .nav-links a{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
   }
   .nav-links .nav-items:hover {
-    /* background-color: #e90606;
-    color: red; */
+    padding: 0px;
+    background-color: #c9c9c9;
+    color: rgb(51, 153, 42);
 }
 }
