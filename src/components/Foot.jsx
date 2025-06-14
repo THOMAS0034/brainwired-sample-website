@@ -32,8 +32,8 @@ export const Foot = () => {
       <div className="container text-center text-md-start mt-5">
         <div className="row mt-3">
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <img src="./imageset/logo.webp" alt="" className="img-fluid w-25"/>
-            <h6 className="text-uppercase fw-bold">Brainwired</h6>
+            <img src="./imageset/logo.webp" alt="" className="img-fluid w-25 foot-logo"/>
+            <h6 className="text-uppercase fw-bold foot-company">Brainwired</h6>
 
             <p>
             </p>
