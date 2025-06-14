@@ -5,6 +5,39 @@ import 'aos/dist/aos.css';
 import './Westock.css'
 import { color } from 'framer-motion';
 import { motion } from 'framer-motion';
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/ReactToastify.css'
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    firstName: e.target.firstName.value,
+    lastName: e.target.lastName.value,
+    email: e.target.email.value,
+    phone: e.target.phone.value,
+    state: e.target.state.value,
+    numLivestock: e.target.numLivestock.value,
+    livestockType: Array.from(document.querySelectorAll('input[name=livestockType]:checked')).map(e => e.value),
+    message: e.target.querySelector('textarea')?.value || ''
+  };
+
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwCCRB6Od5Ax5Ud_1FYJdqElzCJRaCe9gYfTKZBpUerIyQ4g2-5-WefQEaaGg72VKNm/exec', {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      toast.success("Form submitted successfully!")
+    } else {
+      toast.error("Failed to submit form");
+    }
+  } catch (err) {
+    toast.error("Error submitting form");
+  }
+};
+
 
 export const Westock = () => {
     useEffect(() => {
@@ -42,28 +75,28 @@ export const Westock = () => {
               <div className="feature-container">
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(62, 187, 17)'}}>Health care</h1>
               <div className="flex-right">
-                <img className='feature-image' src='./imageset/we1.jpg'/>
+                <img className='feature-image' src='./imageset/healthcare.png'/>
               <p className='feature-content' data-aos='fade-left' data-aos-delay='500'>
                 WeSTOCK is committed to revolutionizing livestock health management by offering the most affordable and accessible healthcare solutions in the world. Our system harnesses the power of Internet of Things (IoT) and Machine Learning (ML) to continuously monitor the physiological and behavioral parameters of animals. By analyzing real-time data collected from wearable sensors, WeSTOCK can detect early signs of illness, stress, or abnormal activity patterns—often before visible symptoms appear. This proactive approach enables timely intervention, reducing the risk of severe diseases and improving overall animal well-being.
               </p>
               </div>
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(234, 144, 33)'}}>Activity Monitoring</h1>
               <div className="flex-left">
-              <img className='feature-image' src='./imageset/we2.jpg'/>
+              <img className='feature-image' src='./imageset/activity.png'/>
               <p className='feature-content' data-aos='fade-right' data-aos-delay='500'>
                 WeSTOCK’s advanced Activity Monitoring system plays a vital role in safeguarding livestock health by keeping a close watch on their daily behavior and routines. Using precision sensors and intelligent algorithms, the system tracks key metrics such as feeding habits, drinking patterns, rumination time, mobility, and resting behavior. These parameters provide deep insights into the well-being of each animal, helping farmers identify deviations that may indicate stress, illness, or discomfort.
               </p>
               </div>
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(225, 38, 38)'}}>Heat Cycle Detection</h1>
               <div className="flex-right">
-                <img className='feature-image' src='./imageset/we3.jpg'/>
+                <img className='feature-image' src='./imageset/heatcycle.png'/>
               <p className='feature-content' data-aos='fade-left' data-aos-delay='500'>
                Accurate tracking of the heat cycle is essential for optimizing reproduction and ensuring higher pregnancy success rates in dairy and beef cattle. WeSTOCK uses advanced motion sensors and behavioral analytics to monitor subtle signs of estrus such as restlessness, increased movement, reduced feed intake, and mounting behavior — indicators that often go unnoticed in manual observation.
               </p>
               </div>
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(41, 125, 209)'}}>Weather Monitoring</h1>
               <div className="flex-left">
-                <img className='feature-image' src='./imageset/we4.jpg'/>
+                <img className='feature-image' src='./imageset/weather.png'/>
               <p className='feature-content' data-aos='fade-right' data-aos-delay='500'>
                 Maintaining an optimal environment within your livestock shed is critical for animal health, comfort, and productivity. WeSTOCK’s Weather Monitoring system tracks real-time temperature and humidity levels both inside and around your farm.
 Using integrated IoT sensors, the system continuously gathers climate data, helping farmers detect unfavorable environmental conditions like excessive heat, cold, or humidity — all of which can negatively affect livestock well-being and performance.
@@ -71,7 +104,7 @@ Using integrated IoT sensors, the system continuously gathers climate data, help
               </div>
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(175, 88, 179)'}}>Vet Support</h1>
               <div className="flex-right">
-                <img className='feature-image' src='./imageset/we5.jpg'/>
+                <img className='feature-image' src='./imageset/vetsupport.png'/>
               <p className='feature-content' data-aos='fade-left' data-aos-delay='500'>
                 Access to expert veterinary care is crucial for maintaining the health and productivity of your livestock. With WeSTOCK’s Vet Support, farmers can easily connect with experienced veterinary professionals from their local region or anywhere across the country — all through a smart, integrated platform.
 
@@ -80,7 +113,7 @@ Whether it’s a routine health check-up, emergency diagnosis, or expert advice 
               </div>
               <h1 className='featurehead' data-aos='zoom-in' data-aos-delay='400' style={{color:'rgb(100, 118, 61)'}}>Proper Documentation</h1>
               <div className="flex-left">
-                <img className='feature-image' src='./imageset/we6.jpg'/>
+                <img className='feature-image' src='./imageset/documentation.png'/>
               <p className='feature-content' data-aos='fade-right' data-aos-delay='500'>
                Maintaining accurate and organized farm records is essential for smooth operations and critical when dealing with insurance claims, bank loans, or government schemes. With WeSTOCK’s Proper Documentation feature, farmers can easily manage and store all vital information related to their livestock and farm performance in one secure digital platform.
 
@@ -104,7 +137,7 @@ from you</h1>
     </div>
   </div>
 
-  <form className="contact-form" action="/submit" method="POST">
+  <form className="contact-form" onSubmit={handleSubmit}>
     <div className="form-row">
       <input className="input-field" type="text" placeholder="Your First Name" name="firstName" required />
       <input className="input-field" type="text" placeholder="Your Last Name" name="lastName" required />
@@ -140,11 +173,11 @@ from you</h1>
 
     <textarea className="input-field" placeholder="Your Message (optional)" rows="4" />
 
-    <button className="submit-btn" type="submit">Send Message</button>
+    <button className="submit-btn" type="submit">Submit form</button>
   </form>
 </div>
 
-
+<ToastContainer />
       </motion.div>
     )
 }
