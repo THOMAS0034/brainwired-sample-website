@@ -142,4 +142,10 @@
     font-size: 10px;
     font-weight: 500;
   }
+  .nav-links .nav-items:hover {
+  color: rgb(255, 255, 255);
+  background-color: #0E9445;    
+  border-radius: 20px;
+  padding: 5px;
+}
 }
