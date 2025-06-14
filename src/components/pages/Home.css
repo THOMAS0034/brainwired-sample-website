@@ -130,12 +130,12 @@ body {
 }
 
 .product-image {
-  padding-top: 10px;
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .product-info {
@@ -318,8 +318,11 @@ body {
   justify-items: center; 
 }
 .product-card img.product-image {
-    width: 100px;
+    width: 30%;
     height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 50%;
   }
 
   .product-card .product-info h1 {

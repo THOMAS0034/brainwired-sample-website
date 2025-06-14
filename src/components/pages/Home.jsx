@@ -107,7 +107,7 @@ export const Home = () => {
            </div>
         </div>
         <div className="product-card" style={{backgroundColor:'rgb(106, 123, 255)'}}>
-          <img className='product-image'  src='./imageset/westocktag.webp'/>
+          <img className='product-image'  src='./imageset/dunes.png'/>
           <div className="product-info">
         <h1 className='product-info'>Westock</h1>
         <h5>(Dunes)</h5>

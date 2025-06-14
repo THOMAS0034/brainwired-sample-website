@@ -73,10 +73,10 @@ export const Career = () => {
   </section>
 </div>
 
-    <h1 style={{fontSize:'45px'}}>
+    <h1 className='work-head'>
       Come Work With Us!
     </h1>
-    <h5 style={{paddingTop:'200px',paddingBottom:'300px', fontSize:'35px',color:'rgb(58, 109, 19)'}}>
+    <h5 className='work-mail'>
       careers@brainwired.in
     </h5>
     </div>
