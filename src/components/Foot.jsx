@@ -42,8 +42,8 @@ export const Foot = () => {
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 className="text-uppercase fw-bold">Products</h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
-            <p><Link to="/westock" className="text-grey foot-link">Westock</Link></p>
-            <p><a href="#!" className="text-grey foot-link">Togo</a></p>   
+            <p><Link to="/westock" className="text-grey foot-link">Westock</Link></p> 
+            <p><Link to="/Togo" className="text-grey foot-link">Togo</Link></p>
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

@@ -87,13 +87,13 @@ export const Home = () => {
             informed about their pets' health and safety. The collar connects to a mobile app, offering real-time alerts and daily
              activity summaries, making it easier to detect unusual behavior and ensure timely care for companion animals.
            </p>
-           <button className='product-btn'>
+           <button className='product-btn' onClick={() => navigate('/Togo')}>
             Know more
            </button>
            </div>
         </div>
         <div className="product-card" style={{backgroundColor:'rgba(212, 64, 27, 0.96)'}}>
-          <img className='product-image'  src='./imageset/westocktag.webp'/>
+          <img className='product-image'  src='./imageset/rancher.png'/>
           <div className="product-info">
         <h1 className='product-info'>Westock</h1>
         <h5>(Rancher)</h5>

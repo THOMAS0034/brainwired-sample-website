@@ -9,6 +9,7 @@ import { Team } from './components/pages/Team';
 import { Career } from './components/pages/Career';
 import { Home } from './components/pages/Home';
 import { Blog } from './components/pages/Blog';
+import { Togo } from './components/pages/Togo';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ScrollToTop from './components/Scroll';
 
@@ -27,8 +28,9 @@ function App() {
         <Route path='/Team' element={<Team/>}/>
         <Route path='/Career' element={<Career/>}/>
         <Route path='/Blog' element={<Blog/>}/>
+        <Route path='/Togo' element={<Togo/>}/>
       </Routes>
-      <Foot/>
+    <Foot/>
     </div>
   );
 }
