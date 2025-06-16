@@ -13,10 +13,10 @@ export default function Welcomesection() {
         </div>
         <div className="welcome-section">
             <div className="welcome-text">
-                <h1 className="" style={{color:"white"}}>
+                <h1 className="welcome-texth1" style={{color:"white"}}>
                     Smart Healthcare
                 </h1>
-                <h1 className="welcome-texth1" style={{color:"black"}}>
+                <h1 className="" style={{color:"black"}}>
                     For Your Beloved Pets
                 </h1>
                 <h3 className="welcome-texth3">

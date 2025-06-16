@@ -20,7 +20,7 @@
   border-radius: 50px;
   margin: 100px auto;        
   padding: 20px;
-  max-width: 1300px;          
+  max-width: 1400px;          
   width: 100%;
 }
 .welcome-text{
@@ -46,6 +46,9 @@
     font-size: 15px;
     max-width: 300px;
     margin: 0 auto;
+}
+
+.welcome-texth1{
 }
 
 .welcome-content{
