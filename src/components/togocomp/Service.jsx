@@ -1,9 +1,17 @@
 import React from 'react'
 import './Service.css'
 import { rgba } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export const Service = () => {
   return (
+    <motion.div
+      className="view"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration:  1 }}
+    >
     <div>
         <h1 className='paltoo-header' >Introducing Paltoo collar</h1>
         <div className="paltooheader">
@@ -119,5 +127,6 @@ from you</h1>
   </form>
     </div>
     </div>
+    </motion.div>
   )
 }

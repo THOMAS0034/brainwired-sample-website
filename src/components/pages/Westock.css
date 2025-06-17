@@ -38,8 +38,6 @@ body {
   padding: 100px 0;
   margin: auto;
 }
-
-/* Feature Section */
 .featurehead {
   margin: 100px;
   font-weight: 800;
@@ -82,8 +80,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Form Styles */
 
 .contact-section {
   display: flex;
@@ -188,8 +184,6 @@ body {
   }
 }
 
-
-/* Responsive Styles */
 @media (max-width: 1356px) {
   .flex-right,
   .flex-left {

@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Welcomesection.css";
 import { div } from "framer-motion/client";
-
+import { motion } from "framer-motion";
 export default function Welcomesection() {
   return (
+    <motion.div
+          className="view"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -30 }}
+          transition={{ duration:  1 }}
+        >
     <div>
         <div className="intro">
             <h1 className="intro1">
@@ -37,5 +44,6 @@ export default function Welcomesection() {
             </div>
         </div>
     </div>
+    </motion.div>
   );
 }
