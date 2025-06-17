@@ -6,11 +6,11 @@
     border: 3px solid #0097b2;
     box-shadow: 2px 2px 8px rgb(161, 161, 161);
     border-radius: 50px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 150px;
     padding: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 .paltoo-text{
@@ -34,6 +34,7 @@
     height: auto;
     border-radius: 10%;
     margin-right: 20px;
+    border: 5px solid #0097b2;
 }
 
 .paltoo-header{
@@ -61,7 +62,8 @@
     display: block;
     position: relative;
     border-radius: 25px;
-    background-color: #0097b2;
+    background-color: #ffffff;
+    border: 3px solid #0097b2;
     padding: 20px;
 }
 
@@ -80,7 +82,7 @@
 .service-card-content{
     text-align: center;
     padding-bottom: 20px;
-    color: white;
+    color:#0097b2;
     font-weight: 600;
 }
 
@@ -115,16 +117,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #f3e6c9;
+    background-color: #fce7d4;
     padding: 50px;
     margin: 0 auto;
     margin-bottom: 25px;
+    width: 80%;
+    border-radius: 25px;
 }
 
 .togo-learn-text{
     display: flex;
     flex-direction: column;
-
 }
 
 .togo-learn-img{
@@ -156,6 +159,7 @@
     border-radius: 25px;
     padding: 20px;
     border: 3px solid #0097b2;
+    transition: .3s;
 }
 
 .togo-feat-card:hover{
@@ -190,6 +194,109 @@
     font-weight: 600;
     color: #000;
 }
+
+
+.togo-learn-btn{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #0097b2;
+    color: #0097b2;
+    font-weight: 500;
+    background-color: white;
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.togo-learn-btn:hover{
+    background-color: #0097b2;
+    color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: #ffffff;
+  font-family: 'Lexend', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left {
+  width: 40%;
+  padding: 20px;
+}
+
+.contact-left h1 {
+  font-size: 2.5rem;
+  color:#0097b2;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+
+.contact-form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  background-color:#0097b2;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 180px;
+  align-self: center;
+}
+
+.submit-btn:hover {
+  background-color:#008197; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
 
 @media(max-width:1168px){
     .service-container{
@@ -300,5 +407,41 @@
   .togo-feat-p {
     font-size: 0.95rem;
     text-align: center;
+  }
+  .togo-learn-btn{
+    width: 35%;
+    font-size: .8rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .contact-left,
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
   }
 }

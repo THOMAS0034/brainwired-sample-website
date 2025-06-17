@@ -8,9 +8,6 @@
 .intro2{
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #0097b2;
-    font-size: 3rem;
-    font-weight: 700;
 }
 
 .welcome-section{
@@ -86,7 +83,7 @@
 @media (max-width: 768px) {
   .welcome-section {
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
     max-width: 90%;
     align-items: center;
     justify-content: center;
@@ -102,6 +99,19 @@
     flex-direction: column;
   }
 
+  .welcome-texth1{
+    font-size: 1.2rem
+  }
+
+  .welcome-texth11{
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+  }
+
+  .welcome-texth3{
+    font-size: .9rem;
+  }
+
   .welcome-image {
     width: 50%;
     padding: 0;
@@ -111,13 +121,13 @@
   }
 
   .welcome-image img {
-    width: 80%;
+    width: 70%;
     max-width: 300px;
     height: auto;
   }
 
   .prebookbtn {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 150px;
     font-size: .8rem;
   }
@@ -126,6 +136,7 @@
     padding: 10px;
     max-width: 90%;
     font-size: 1rem;
+    margin-top: 10px;
   }
 
   .intro1, .intro2 {

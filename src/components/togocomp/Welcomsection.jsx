@@ -9,14 +9,14 @@ export default function Welcomesection() {
             <h1 className="intro1">
                 Brainwired presents
             </h1>
-            <h1 className="intro2">TOGO</h1>
+            <img src="./imageset/togologo.avif" alt="" />
         </div>
         <div className="welcome-section">
             <div className="welcome-text">
                 <h1 className="welcome-texth1" style={{color:"white"}}>
                     Smart Healthcare
                 </h1>
-                <h1 className="" style={{color:"black"}}>
+                <h1 className="welcome-texth11" style={{color:"black"}}>
                     For Your Beloved Pets
                 </h1>
                 <h3 className="welcome-texth3">
