@@ -1,24 +1,24 @@
-.navbar {
-  background-color: #ffffff;
+
+.togo-nav-navbar {
+  background-color:#0097b2;
   position: relative;
-  border-radius: 15px;
-  margin: 20px;
-  margin: 20px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.nav-container {
+.togo-nav-container {
   padding: 0 16px;
   width: 100%;
   max-width: 1200px;
   margin: auto;
   display: flex;
   height: 70px;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   box-sizing: border-box;
 }
 
-.nav-links {
+.togo-nav-links {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -27,65 +27,65 @@
   padding: 0;
 }
 
-.nav-links a {
+.togo-nav-links a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-family: "Lexend", sans-serif;
   font-size: 20px;
   font-weight: 500;
   transition: ease-in-out 0.2s;
 }
 
-.nav-links .nav-items:hover {
-  color: rgb(255, 255, 255);
-  background-color: #0E9445;    
+.togo-nav-links .togo-nav-item:hover {
+  color:#0097b2;
+  background-color: white;
   border-radius: 20px;
   padding: 10px;
 }
 
-.nav_logo {
+.togo-nav-logo {
   width: 70px;
   margin-left: 10px;
-  margin-bottom: 10px;
 }
 
-.hamburger {
+.togo-nav-hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 6px;
 }
 
-.hamburger span {
+.togo-nav-hamburger span {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 2px;
   transition: 0.3s;
 }
 
-.hamburger.active span:nth-child(1) {
-    transform: rotate(60deg) translate(16px, -8px);
+.togo-nav-hamburger.togo-nav-active span:nth-child(1) {
+  transform: rotate(60deg) translate(16px, -8px);
 }
 
-.hamburger.active span:nth-child(2) {
+.togo-nav-hamburger.togo-nav-active span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active span:nth-child(3) {
+.togo-nav-hamburger.togo-nav-active span:nth-child(3) {
   transform: rotate(-60deg) translate(8px, -2px);
 }
 
 @media (max-width: 1368px) {
-  .navbar {
+  .togo-nav-navbar {
     width: 100%;
     max-width: 100%;
     padding: 0 16px;
     box-sizing: border-box;
   }
-  .nav-links {
+
+  .togo-nav-links {
     position: absolute;
-    top: 80px; 
+    top: 80px;
     right: 50px;
     left: 50px;
     background-color: rgb(219, 219, 219);
@@ -98,39 +98,39 @@
     margin-left: 50px;
     height: 65px;
     border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-20px);
     transition: all 0.3s ease-in-out;
   }
 
-  .nav-links a {
-  font-size: 20px;
-  font-weight: 400;
-}
+  .togo-nav-links a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0097b2;
+  }
 
-
-  .nav-links.open {
+  .togo-nav-links.togo-nav-open {
     opacity: 1;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     pointer-events: auto;
     transform: translateY(0);
   }
 
-  .nav-links li {
+  .togo-nav-links li {
     margin: 5px 0;
     color: white;
   }
 
-  .hamburger {
+  .togo-nav-hamburger {
     display: flex;
     margin-right: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-links{
+  .togo-nav-links {
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 10px;
@@ -139,13 +139,16 @@
     left: 10px;
     height: 50px;
   }
-  .nav-links a{
+
+  .togo-nav-links a {
     font-size: 10px;
     font-weight: 500;
   }
-  .nav-links .nav-items:hover {
+
+  .togo-nav-links .togo-nav-item:hover {
     padding: 0px;
-    background-color: #e7e7e7;
-    color: rgb(51, 153, 42);
-}
+    background-color:#0097b2;
+    padding: 10px;
+    color: white
+  }
 }

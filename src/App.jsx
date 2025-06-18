@@ -10,15 +10,18 @@ import { Career } from './components/pages/Career';
 import { Home } from './components/pages/Home';
 import { Blog } from './components/pages/Blog';
 import { Togo } from './components/pages/Togo';
+import { useLocation } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ScrollToTop from './components/Scroll';
+import { Togonavbar } from './components/Togonavbar';
 
 
 function App() {
+  const location = useLocation();
+  const istogo = location.pathname === "/Togo";
   return (
-    <div
-      className="App">
-      <Navbar/>
+    <div className="App">
+      { istogo ? <Togonavbar/> : <Navbar/> } 
       <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home />} />
