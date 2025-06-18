@@ -20,11 +20,21 @@ function Navbar() {
         </div>
 
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li>
-            <NavLink to="/Westock" className="nav-items" onClick={() => setMenuOpen(false)}>
-              WeSTOCK
-            </NavLink>
-          </li>
+          <li className="nav-dropdown">
+  <span className="nav-items nav-dropdown-toggle">Products ▾</span>
+  <ul className="nav-dropdown-menu">
+    <li>
+      <NavLink to="/Westock" className="nav-items" onClick={() => setMenuOpen(false)}>
+        WeSTOCK
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/Togo" className="nav-items" onClick={() => setMenuOpen(false)}>
+        Togo
+      </NavLink>
+    </li>
+  </ul>
+</li>
           <li>
             <NavLink to="/Aboutus" className="nav-items" onClick={() => setMenuOpen(false)}>
               About us
