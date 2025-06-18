@@ -14,6 +14,7 @@ import { useLocation } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ScrollToTop from './components/Scroll';
 import { Togonavbar } from './components/Togonavbar';
+import { Togofoot } from './components/Togofoot';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
         <Route path='/Blog' element={<Blog/>}/>
         <Route path='/Togo' element={<Togo/>}/>
       </Routes>
-    <Foot/>
+      {istogo ? <Togofoot/> : <Foot/>}
     </div>
   );
 }
